@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Lab06EmergencyRoomPriorityQueue {
+//Elisabeth Ann L. Yap
+public class Lab06EmergencyRoomPriorityQueueELY {
     public static void printHeader() {
         System.out.println("Welcome to the Emergency Room Patient Admittance Menu System");
         System.out.println("Author: Group 1");
@@ -52,8 +53,6 @@ public class Lab06EmergencyRoomPriorityQueue {
                     if(pq.isEmpty()){
                         System.out.println("Nothing to pop: the priority queue is empty");
                     }else{
-                        Patient firstName = pq.peek();
-                        System.out.println("'" + firstName.getName()+ "' served from the priority queue");
                         pq.pop();
                     }
                     break;
