@@ -53,7 +53,7 @@ public class Lab06EmergencyRoomPriorityQueue {
                         System.out.println("Nothing to pop: the priority queue is empty");
                     }else{
                         Patient firstName = pq.peek();
-                        System.out.println("At the front of the priority queue: " + firstName.getName());
+                        System.out.println("'" + firstName.getName()+ "' served from the priority queue");
                         pq.pop();
                     }
                     break;
