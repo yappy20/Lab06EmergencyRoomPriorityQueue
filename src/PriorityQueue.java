@@ -127,11 +127,6 @@ public class PriorityQueue<T extends Comparable>
         System.out.println();
     }
 
-    /*
-     * These two methods are included because the PDF UML uses capitalized
-     * Print() and PrintJustNames(). If your driver uses lowercase methods,
-     * those also work.
-     */
     public void Print()
     {
         print();
