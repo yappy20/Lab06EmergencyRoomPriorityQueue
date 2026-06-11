@@ -52,7 +52,9 @@ public class Lab06EmergencyRoomPriorityQueue {
                     if(pq.isEmpty()){
                         System.out.println("Nothing to pop: the priority queue is empty");
                     }else{
-                        System.out.println("At the front of the priority queue: " + pq.peek());
+                        Patient firstName = pq.peek();
+                        System.out.println("At the front of the priority queue: " + firstName.getName());
+                        pq.pop();
                     }
                     break;
                 case 4:
@@ -96,10 +98,17 @@ public class Lab06EmergencyRoomPriorityQueue {
                     }
                     break;
                 case 99:
+                    pq = new PriorityQueue<Patient>();
+                    pq.push(new Patient("Bob", "BB22", "0901"));
+                    pq.push(new Patient("Linda", "PA33", "0902"));
+                    pq.push(new Patient("Gail", "AB22", "0925"));
 
+                    System.out.println("New Patients Added");
                     break;
 
                 default:
+                    System.out.println("Invalid choice");
+                    break;
 
             }
 
